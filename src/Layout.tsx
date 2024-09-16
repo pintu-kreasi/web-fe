@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 
 const Layout = () => {
@@ -7,11 +7,11 @@ const Layout = () => {
       <header>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/service">Service</a></li>
-            <li><a href="/Academy">Academy</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/service">Service</Link></li>
+            <li><Link to="/academy">Academy</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </header>
