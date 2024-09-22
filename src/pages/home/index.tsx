@@ -1,8 +1,10 @@
-
+import SectionBanner from "../../components/templates/SectionBanner";
 
 const Home = () => {
   return (
-    <h1>home</h1>
+    <>
+      <SectionBanner />
+    </>
   )
 }
 
