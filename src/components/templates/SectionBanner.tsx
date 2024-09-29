@@ -10,6 +10,7 @@ export default function SectionBanner() {
   const tiemout = 800;
   const images = [banner1, banner2, banner3, banner4, banner5, banner6];
   const [imageItem, setImageItem] = useState([]);
+  
   const infiniteHide = () => {
     // check
     let items = document.getElementsByClassName('image-item');
