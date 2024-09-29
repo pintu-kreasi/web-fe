@@ -14,11 +14,13 @@ export default function SectionBanner() {
     // check
     let items = document.getElementsByClassName('image-item');
     if (imageItem.length == 0) {
-      setImageItem(items);
+      const arrItems = [].slice.call(items);
+      setImageItem(arrItems);
       return;
     }
     for (let i = 0; i < items.length; i++) {
-      let nextShowItem = parseInt(i)+1;
+      // let nextShowItem = parseInt(i)+1;
+      let nextShowItem = i+1;
 
       if (items[i].classList == undefined) continue;
       if (items[i].classList.contains('opacity-100')) {
