@@ -5,7 +5,7 @@ import Navbar from "./components/organisms/navbar";
 const Layout = () => {
   return (
     <>
-      <header>
+      <header className="bg-transparent fixed z-20 w-screen">
         <Navbar />
       </header>
       <Outlet />
